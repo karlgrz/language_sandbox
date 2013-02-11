@@ -10,7 +10,7 @@
   (slurp (str (cwd) path-from-proj-root)))
 
 (defn write-file [filename contents]
-  "Write `filename` to current namespace"
+  "spit `contents` into file, given path is built from project root"
   (spit (str (cwd) filename) contents))
 
 (defn join-file [files]
