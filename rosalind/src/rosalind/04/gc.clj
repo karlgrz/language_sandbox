@@ -46,4 +46,4 @@
 (defn -main []
   (def to-write 
     (last (sort-by val (gc (format-rosalind (read-file gc-source))))))
-  (write-file gc-loc (clojure.string/join "\n" to-write)))
+  (write-file gc-loc (clojure.string/join new-line to-write)))
