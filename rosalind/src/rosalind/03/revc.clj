@@ -5,10 +5,10 @@
   "Reverse a DNA sequence, replacing ACGT with complement TGCA"
   (apply str (reverse (clojure.string/replace
                         sequence #"A|C|G|T"
-                        {"A" "T"
-                         "C" "G"
-                         "G" "C"
-                         "T" "A"}))))
+                        {\A \T
+                         \C \G
+                         \G \C
+                         \T \A}))))
 
 (def revc-loc
   (join-file ["src" "rosalind" "03" "revc.txt"]))
