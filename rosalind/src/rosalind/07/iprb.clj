@@ -15,7 +15,6 @@
         d-prob (* 4 (count (filter #(some #{2} %) combs)))
         h-prob (* 3 (count (filter #(= [1 1] %) combs)))
         r-prob (* 2 (count (filter #(= [1 0] %) combs)))]
-    (print d-prob h-prob r-prob)
     (float (/ (+ d-prob h-prob r-prob) possible))))
 
 (def iprb-loc
